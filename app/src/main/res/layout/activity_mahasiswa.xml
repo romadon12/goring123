@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Mahasiswa">
+
+    <TextView
+        android:id="@+id/tvTitleScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Data"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:paddingBottom="16dp"
+        android:textColor="#664FA3"
+        />
+
+    <ImageView
+        android:id="@+id/vNomor"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@drawable/baseline_input_24"
+        android:paddingRight="5sp"
+        android:layout_below="@id/tvTitleScreen"
+        />
+
+    <TextView
+        android:id="@+id/tvNomor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@id/vNomor"
+        android:layout_toRightOf="@id/vNomor"
+        android:layout_alignBottom="@id/vNomor"
+        />
+
+    <EditText
+        android:id="@+id/etNomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="text"
+        android:hint="070118****"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textSize="18sp"
+        tools:ignore="VisualLintTextFieldSize"
+        android:layout_below="@id/tvNomor"
+        />
+
+    <ImageView
+        android:id="@+id/vName"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@drawable/baseline_person_24"
+        android:paddingRight="5sp"
+        android:layout_below="@id/etNomor"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@id/vName"
+        android:layout_toRightOf="@id/vName"
+        android:layout_alignBottom="@id/vName"
+        />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="text"
+        android:hint="Udin bin Salahudin"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textSize="18sp"
+        tools:ignore="VisualLintTextFieldSize"
+        android:layout_below="@id/tvName"
+        />
+
+    <ImageView
+        android:id="@+id/vDate"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@drawable/baseline_date_range_24"
+        android:paddingRight="5sp"
+        android:layout_below="@id/etName"
+        />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Lahir"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@id/vDate"
+        android:layout_toRightOf="@id/vDate"
+        android:layout_alignBottom="@id/vDate"
+        />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="text"
+        android:hint="17-08-1945"
+        android:inputType="none"
+        android:focusable="false"
+        android:padding="16dp"
+        android:textSize="18sp"
+        tools:ignore="VisualLintTextFieldSize"
+        android:layout_below="@id/tvDate"
+        />
+
+    <ImageView
+        android:id="@+id/vGender"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@drawable/baseline_transgender_24"
+        android:paddingRight="5sp"
+        android:layout_below="@id/etDate"
+        />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@id/vGender"
+        android:layout_toRightOf="@id/vGender"
+        android:layout_alignBottom="@id/vGender"
+        />
+
+    <RadioGroup
+        android:id="@+id/etGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvGender"
+        android:padding="16dp">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/vAddress"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        app:srcCompat="@drawable/baseline_map_24"
+        android:paddingRight="5sp"
+        android:layout_below="@id/etGender"
+        />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@id/vAddress"
+        android:layout_toRightOf="@id/vAddress"
+        android:layout_alignBottom="@id/vAddress"
+        />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="text"
+        android:hint="Kota Medan"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textSize="18sp"
+        tools:ignore="VisualLintTextFieldSize"
+        android:layout_below="@id/tvAddress"
+        />
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/baseline_file_present_24"
+        android:drawableTint="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="Save"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/tvTitleScreen"
+        android:layout_alignBottom="@id/tvTitleScreen"
+        />
+
+
+</RelativeLayout>
